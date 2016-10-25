@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>{blog_title}</title>
+<style type="text/css">
+/* Client-specific Styles */
+div, p, a, li, td {
+	-webkit-text-size-adjust: none;
+}
+#outlook a {
+	padding: 0;
+} /* Force Outlook to provide a "view in browser" menu link. */
+html {
+	width: 100%;
+}
+body {
+	width: 100% !important;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	margin: 0;
+	padding: 0;
+}
+/* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+.ExternalClass {
+	width: 100%;
+} /* Force Hotmail to display emails at full width */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+	line-height: 100%;
+} /* Force Hotmail to display normal line spacing. */
+.backgroundTable {
+	margin: 0;
+	padding: 0;
+	width: 100% !important;
+	line-height: 100% !important;
+}
+img {
+	outline: none;
+	text-decoration: none;
+	border: none;
+	-ms-interpolation-mode: bicubic;
+}
+a img {
+	border: none;
+}
+.image_fix {
+	display: block;
+}
+p {
+	margin: 0px 0px !important;
+}
+table td {
+	border-collapse: collapse;
+}
+table {
+	border-collapse: collapse;
+	mso-table-lspace: 0pt;
+	mso-table-rspace: 0pt;
+}
+a {
+	color: #46962b;
+	text-decoration: none;
+	text-decoration: none!important;
+}
+/*STYLES*/
+table[class=full] {
+	width: 100%;
+	clear: both;
+}
+/*Fonts*/
+
+@font-face {
+	font-family: 'Arvo Gruen';
+	font-style: normal;
+	src: url('http://www.gruene.de/arvo_gruen.svg#Customfont-Regular') format('svg'), url('http://www.gruene.de/arvo_gruen.eot?#iefix') format('embedded-opentype'), url('http://www.gruene.de/arvo_gruen.woff') format('woff'), url('http://www.gruene.de/arvo_gruen.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Arvo Regular';
+	font-style: normal;
+	src: url('http://www.gruene.de/arvo_regular.svg#Customfont-Regular') format('svg'), url('http://www.gruene.de/arvo_regular.eot?#iefix') format('embedded-opentype'), url('http://www.gruene.de/arvo_regular.woff') format('woff'), url('http://www.gruene.de/arvo_regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	src: url('http://www.gruene.de/ptsans_regular.svg#Customfont-Regular') format('svg'), url('http://www.gruene.de/ptsans_regular.eot?#iefix') format('embedded-opentype'), url('http://www.gruene.de/ptsans_regular.woff') format('woff'), url('http://www.gruene.de/ptsans_regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PT Sans Bold';
+	font-style: normal;
+	src: url('http://www.gruene.de/ptsans_bold.svg#Customfont-Regular') format('svg'), url('http://www.gruene.de/ptsans_bold.eot?#iefix') format('embedded-opentype'), url('http://www.gruene.de/ptsans_bold.woff') format('woff'), url('http://www.gruene.de/ptsans_bold.ttf') format('truetype');
+}
+
+/*IPAD STYLES*/
+@media only screen and (max-width: 640px) {
+a[href^="tel"], a[href^="sms"] {
+	text-decoration: none;
+	color: #46962b; /* or whatever your want */
+	pointer-events: none;
+	cursor: default;
+}
+.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+	text-decoration: default;
+	color: #46962b !important;
+	pointer-events: auto;
+	cursor: default;
+}
+table[class=devicewidth] {
+	width: 440px!important;
+	text-align: center!important;
+}
+table[class=devicewidthinner] {
+	width: 420px!important;
+	text-align: center!important;
+}
+img[class=banner] {
+	width: 440px!important;
+	height: 220px!important;
+}
+img[class=col2img] {
+	width: 440px!important;
+	height: 220px!important;
+}
+}
+
+/*IPHONE STYLES*/
+@media only screen and (max-width: 480px) {
+a[href^="tel"], a[href^="sms"] {
+	text-decoration: none;
+	color: #46962b; /* or whatever your want */
+	pointer-events: none;
+	cursor: default;
+}
+.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+	text-decoration: default;
+	color: #46962b !important;
+	pointer-events: auto;
+	cursor: default;
+}
+table[class=devicewidth] {
+	width: 280px!important;
+	text-align: center!important;
+}
+table[class=devicewidthinner] {
+	width: 260px!important;
+	text-align: center!important;
+}
+img[class=banner] {
+	width: 280px!important;
+	height: 140px!important;
+}
+img[class=col2img] {
+	width: 280px!important;
+	height: 140px!important;
+}
+}
+</style>
+</head>
+<body>
+<!-- Start of header -->
+<table width="100%" bgcolor="#46962b" cellpadding="0" cellspacing="0" border="0" class="backgroundTable" st-sortable="header" style="background: #46962b;">
+  <tbody>
+    <tr>
+      <td><table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+          <tbody>
+            <tr>
+              <td width="100%"><table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                  <tbody>
+                    <tr>
+                      <td><!-- start of menu -->
+                        
+                        <table width="600" height="50" border="0" align="left" valign="middle" cellpadding="0" cellspacing="0" class="devicewidth">
+                          <tbody>
+                            <tr>
+                              <td height="50" align="center" valign="middle" style="font-family: 'Arvo Gruen', 'Trebuchet MS', Helvetica, arial, sans-serif; font-size: 13px; color: #ffffff;" st-content="menu"><!--#text_line #-->{blog_title}<!--#/text_line#--></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        
+                        <!-- end of menu --></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+<!-- End of Header --> 
+<!--#loopsplit#--> <!--#my_element name="Persönliches Intro" #-->
+<table width="100%" bgcolor="#fcfcfc" cellpadding="0" cellspacing="0" border="0" class="backgroundTable" st-sortable="full-text">
+  <tbody>
+    <tr>
+      <td><table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+          <tbody>
+            <tr>
+              <td width="100%"><table bgcolor="#ffffff"style="background:#ffffff;" width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                  <tbody>
+                    <!-- Spacing -->
+                    <tr>
+                      <td height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                    </tr>
+                    <!-- Spacing -->
+                    <tr>
+                      <td><table width="560" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
+                          <tbody>
+                            <!-- Title -->
+                            <tr>
+                              <td style="font-family: 'Arvo Regular', 'Trebuchet MS', Helvetica, arial, sans-serif; font-size: 18px; color: #282828; line-height: 24px;text-align: left;"><!--#text_line #-->Liebe Abonnentin, lieber Abonnent!<!--#/text_line#--></td>
+                            </tr>
+                            <!-- End of Title --> 
+                            <!-- spacing -->
+                            <tr>
+                              <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr>
+                            <!-- End of spacing -->
+                            
+                            <tr>
+                              <td style="font-family: 'PT Sans Regular', 'Trebuchet MS', Helvetica, arial, sans-serif; font-size: 14px; color: #333333; line-height: 24px;text-align: left;"><!--#html#-->
+                                
+                                <div> {message} <br>
+                                  <br>
+                                  Viele Grüße,<br>
+                                  <strong>{blog_title}</strong> 
+                                  <!--#/html#--> </div></td>
+                            </tr>
+                            
+                            <!-- Spacing -->
+                            <tr>
+                              <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr>
+                            <!-- Spacing -->
+                          </tbody>
+                        </table></td>
+                    </tr>
+                    <!-- Spacing -->
+                    <tr>
+                      <td height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                    </tr>
+                    <!-- Spacing -->
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+<!-- Start of seperator -->
+<table width="100%" bgcolor="#fcfcfc" cellpadding="0" cellspacing="0" border="0" class="backgroundTable" st-sortable="seperator">
+  <tbody>
+    <tr>
+      <td><table width="600" align="center" cellspacing="0" cellpadding="0" border="0" class="devicewidth">
+          <tbody>
+            <tr>
+              <td align="center" height="30" style="font-size: 1px; line-height: 1px;"> </td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+<!-- End of seperator --> 
+<!-- Start of footer --> 
+<!-- Start of footer -->
+<table width="100%" bgcolor="#fcfcfc" cellpadding="0" cellspacing="0" border="0" class="backgroundTable" st-sortable="footer">
+  <tbody>
+    <tr>
+      <td><table width="600" bgcolor="#46962b" style="background: #46962b;" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+          <tbody>
+            <tr>
+              <td width="100%"><table bgcolor="#46962b" width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                  <tbody>
+                    <!-- Spacing -->
+                    <tr>
+                      <td height="10" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"> </td>
+                    </tr>
+                    <!-- Spacing -->
+                    <tr>
+                      <td align="center"><!-- 2columns -->
+                        
+                        <table width="600" bgcolor="#46962b" cellpadding="0" cellspacing="0" border="0" class="backgroundTable" st-sortable="2columns">
+                          <tbody>
+                            <tr>
+                              <td><table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                                  <tbody>
+                                    <tr>
+                                      <td width="20">   </td>
+                                      <td width="560"><table bgcolor="#46962b" width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                                          <tbody>
+                                            <tr>
+                                              <td height="10" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"> </td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center"><!-- start of left column -->
+                                                
+                                                <table width="240" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td><!-- start of text content table -->
+                                                        
+                                                        <table width="240" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth">
+                                                          <tbody>
+                                                            <!-- Content -->
+                                                            <tr>
+                                                              <td><table width="240" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                                  <tbody>
+                                                                    <tr>
+                                                                      <td style="font-family: 'Arvo Regular', 'Trebuchet MS', Helvetica, arial, sans-serif; font-size: 14px; color: #ffffff; text-align: left; line-height: 24px;"><!--#aboutus #--><strong>BÜNDNIS 90/DIE GRÜNEN Ortsverband Bad Salzuflen</strong><br />
+                                                                        <!--#/aboutus#--><br /></td>
+                                                                    </tr>
+                                                                  </tbody>
+                                                                </table></td>
+                                                            </tr>
+                                                            <!-- end of Content --> <!-- end of content -->
+                                                          </tbody>
+                                                        </table></td>
+                                                    </tr>
+                                                    <!-- end of text content table -->
+                                                  </tbody>
+                                                </table>
+                                                
+                                                <!-- end of left column --> <!-- start of right column -->
+                                                
+                                                <table width="240" align="right" border="0" cellpadding="0" cellspacing="0" class="devicewidth">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td><!-- start of text content table -->
+                                                        
+                                                        <table width="280" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth">
+                                                          <tbody>
+                                                            <!-- Content -->
+                                                            <tr>
+                                                              <td align="left"><table>
+                                                                  <!-- read more -->
+                                                                  <tbody>
+                                                                    <tr>
+                                                                      <td><table width="280" height="32" bgcolor="#09311d" align="center" valign="middle" border="0" cellpadding="0" cellspacing="0" style="background: #09311d; border-radius: 3px;" st-button="learnmore">
+                                                                          <tbody>
+                                                                            <tr>
+                                                                              <td height="9" align="center" style="font-size: 1px; line-height: 1px;"> </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                              <td height="14" align="center" valign="middle" style="font-family: 'PT Sans Regular','Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: bold; color: #ffffff; text-align: center; line-height: 14px; ; -webkit-text-size-adjust: none;" st-title="fulltext-btn"><!--#link #--><a style="text-decoration: none; color: #ffffff; text-align: center;" href="http://gruene-bad-salzuflen.de/">Homepage</a><!--#/link#--></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                              <td height="9" align="center" style="font-size: 1px; line-height: 1px;"> </td>
+                                                                            </tr>
+                                                                          </tbody>
+                                                                        </table></td>
+                                                                    </tr>
+                                                                    <!-- end of read more -->
+                                                                    <tr>
+                                                                      <td height="10"></td>
+                                                                    </tr>
+                                                                    <!-- read more -->
+                                                                    <tr>
+                                                                      <td><table width="280" height="32" bgcolor="#3b5998" align="center" valign="middle" border="0" cellpadding="0" cellspacing="0" style="background: #3b5998; border-radius: 3px;" st-button="learnmore">
+                                                                          <tbody>
+                                                                            <tr>
+                                                                              <td height="9" align="center" style="font-size: 1px; line-height: 1px;"> </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                              <td height="14" align="center" valign="middle" style="font-family: 'PT Sans Regular','Trebuchet MS', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: bold; color: #ffffff; text-align: center; line-height: 14px; ; -webkit-text-size-adjust: none;" st-title="fulltext-btn"><!--#link #--><a style="text-decoration: none; color: #ffffff; text-align: center;" href="https://www.facebook.com/pages/B%C3%9CNDNIS-90DIE-GR%C3%9CNEN-Bad-Salzuflen/130184617879">Facebook</a><!--#/link#--></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                              <td height="9" align="center" style="font-size: 1px; line-height: 1px;"> </td>
+                                                                            </tr>
+                                                                          </tbody>
+                                                                        </table></td>
+                                                                    </tr>
+                                                                    <!-- end of read more -->
+                                                                  </tbody>
+                                                                </table></td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table></td>
+                                                    </tr>
+                                                    <!-- end of Content --> <!-- end of content -->
+                                                  </tbody>
+                                                </table></td>
+                                            </tr>
+                                            <!-- end of text content table -->
+                                            <tr>
+                                              <td height="10" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"> </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                        
+                                        <!-- end of right column --></td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td width="20">   </td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                <!-- end of 2 columns --></td>
+            </tr>
+            <!-- Spacing -->
+            <tr>
+              <td height="10" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"> </td>
+            </tr>
+            <!-- Spacing -->
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+<!-- End of footer --> <!-- Start of Postfooter -->
+<table width="100%" bgcolor="#fcfcfc" cellpadding="0" cellspacing="0" border="0" class="backgroundTable" st-sortable="postfooter">
+  <tbody>
+    <tr>
+      <td><table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+          <tbody>
+            <!-- Spacing -->
+            <tr>
+              <td width="100%" height="20"></td>
+            </tr>
+            <!-- Spacing -->
+            <tr>
+              <td align="center" valign="middle" style="font-family: 'PT Sans Regular','Trebuchet MS', Helvetica, arial, sans-serif; font-size: 13px; color: #282828; line-height: 24px;" st-content="preheader"><a href="http://gruene-bad-salzuflen.de/termine/" style="text-decoration: none; color: #46962b">Termine</a> • <a href="http://gruene-bad-salzuflen.de/service/impressum/" style="text-decoration: none; color: #46962b">Impressum</a><br /></td>
+            </tr>
+            <!-- Spacing -->
+            <tr>
+              <td width="100%" height="20"></td>
+            </tr>
+            <!-- Spacing -->
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+<!-- End of postfooter --> 
+<!-- End of footer -->
+</body>
+</html>
