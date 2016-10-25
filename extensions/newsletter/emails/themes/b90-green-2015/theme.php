@@ -9,7 +9,7 @@ $theme_subject = $theme_options['theme_subject'];
 $public_display = geskill_get_public_display();
 
 $hosted_picture = get_site_url() . '/newsletter/img/' . $public_display['display_username'] . '-80x80.jpg';
-$picture = get_avatar_url(get_current_user_id(), array('default' => hosted_picture));
+$picture = get_avatar_url(get_current_user_id(), array('default' => $hosted_picture));
 
 if (isset($theme_options['theme_posts'])) {
     $filters = array();
